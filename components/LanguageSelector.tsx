@@ -10,18 +10,18 @@ interface LanguageSelectorProps {
   parentSetLang: React.Dispatch<React.SetStateAction<Translations>>;
 }
 
-export const LanguageSelector = ({ parentSetLang }: LanguageSelectorProps) => {
+const LanguageSelector = ({ parentSetLang }: LanguageSelectorProps) => {
   // State for the current language, defaulting to English
-  const [lang, setLang] = useState('en'); 
+  const [lang, setLang] = useState("en");
 
   // Load language from localStorage on mount
   useEffect(() => {
-    const storedLang = localStorage.getItem('lang');
-    if (storedLang === 'ro' || storedLang === 'en') {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang === "ro" || storedLang === "en") {
       setLang(storedLang);
     } else {
       // If nothing is found or it's invalid, set default and save
-      localStorage.setItem('lang', 'en');
+      localStorage.setItem("lang", "en");
     }
   }, []);
 
@@ -29,7 +29,7 @@ export const LanguageSelector = ({ parentSetLang }: LanguageSelectorProps) => {
   const handleChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = event.target.value;
     setLang(newLang);
-    localStorage.setItem('lang', newLang);
+    localStorage.setItem("lang", newLang);
     // Optional: Reload window or trigger context update here if necessary
     console.log(`Language set to: ${newLang}`);
 
@@ -64,3 +64,5 @@ export const LanguageSelector = ({ parentSetLang }: LanguageSelectorProps) => {
     </div>
   );
 };
+
+export default LanguageSelector;

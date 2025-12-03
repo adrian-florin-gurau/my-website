@@ -1,5 +1,58 @@
 {
-    "home": "/",
-    "projectsLabel": "Projects",
-    "projects": "/projects"
+  "home": "/",
+  "projectsLabel": "Projects",
+  "projectsRoute": "/projects",
+  "projects": [
+    {
+        "name": "HuGuRo (Human Guard Robot)",
+        "description": "This is my Bachelor’s thesis, which consists of a Robot for Human Detection, its objective being the detection of intruders. For the hardware part of it, I used Arduino boards and modules. As for the software part of it, I mainly used C++ for the movement and detection AI, Next.js for the website.",
+        "link": "https://github.com/adrian-florin-gurau/huguro",
+        "langs": [
+            "TypeScript"
+        ],
+        "tools": [
+            "Next.js",
+            "PostgreSQL"
+        ],
+        "content": "Not yet implemented..."
+    },
+    {
+        "name": "Local Mail Server",
+        "description": "A socket-based app that simulates the behaviour of a mail server, but locally.",
+        "link": "https://github.com/adrian-florin-gurau/mail-server",
+        "langs": [
+            "Python"
+        ],
+        "tools": [
+            "Sockets",
+            "Threads"
+        ],
+        "content": "Not yet implemented..."
+    },
+    {
+        "name": "Examiverse FE",
+        "description": "The front-end of a web application that acts as a platform for students and teachers to connect for different activities (tests, events, etc.).",
+        "link": "https://github.com/adrian-florin-gurau/examiverse-frontend",
+        "langs": [
+            "JavaScript"
+        ],
+        "tools": [
+            "React"
+        ],
+        "content": "Not yet implemented..."
+    },
+    {
+        "name": "Examiverse BE",
+        "description": "The back-end of a web application that acts as a platform for students and teachers to connect for different activities (tests, events, etc.).",
+        "link": "https://github.com/adrian-florin-gurau/examiverse-backend",
+        "langs": [
+            "JavaScript"
+        ],
+        "tools": [
+            "Express",
+            "PostgreSQL"
+        ],
+        "content": "Not yet implemented..."
+    }
+  ]
 }

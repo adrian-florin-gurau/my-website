@@ -1,12 +1,39 @@
 {
-    "function": "Inginer Full-Stack & Student la Securitate Cibernetică",
-    "aboutTitle": "Despre mine",
-    "aboutText": "Ca student la Securitate Cibernetică și pasionat de IT, sunt dedicat învățării continue și extinderii expertizei în acest domeniu. Sunt încrezător în capacitatea mea de a depăși provocările, bazându-mă pe perseverență, determinare, flexibilitate, ambiție și creativitate.",
-    "projectsTitle": "Proiectele mele",
-    "projectsGeneralText": "Pentru documentație completă și codul fiecărui proiect, accesează depozitele mele GitHub:",
-    "projectsChoiceText": "Dar pentru prezentări scurte și prietenoase, poți merge aici:",
-    "contactTitle": "Contactează-mă",
-    "lastUpdatedLabel": "Ultima actualizare",
-    "themeInfoMessage": "[Tema site-ului este tema SO-ului tau]",
-    "devNotification": "[Ruta /projects este in proces de dezvoltare]"
+  "portofolio": "portofoliul meu",
+  "workspace": "biroul meu",
+  "spot": "locul meu",
+  "function": "Inginer Full-Stack & Student la Securitate Cibernetică",
+  "aboutTitle": "Despre mine",
+  "aboutText": "Ca student la Securitate Cibernetică și pasionat de IT, sunt dedicat învățării continue și extinderii expertizei în acest domeniu. Sunt încrezător în capacitatea mea de a depăși provocările, bazându-mă pe perseverență, determinare, flexibilitate, ambiție și creativitate.",
+  "projectsTitle": "Proiectele mele",
+  "projectsGeneralText": "Pentru documentație completă și codul fiecărui proiect, accesează depozitele mele GitHub:",
+  "projectsChoiceText": "Dar pentru prezentări scurte și prietenoase, poți merge aici:",
+  "contactTitle": "Contactează-mă",
+  "lastUpdatedLabel": "Ultima actualizare",
+  "themeInfoMessage": "[Tema site-ului este tema SO-ului tau]",
+  "devNotification": "[Ruta /projects este in proces de dezvoltare]",
+  "languagesTitle": "Limbi cunoscute",
+  "languages": [
+    {
+        "name": "Română",
+        "gradeLabel": "Nativ",
+        "gradeNumeric": "C2+"
+    },
+    {
+        "name": "Engleză",
+        "gradeLabel": "Fluent",
+        "gradeNumeric": "C1+"
+    }
+  ],
+  "softSkillsTitle": "Abilități 'soft'",
+  "softSkills": [
+    "Rezolvarea problemelor",
+    "Atenție la detalii",
+    "Gândire critică",
+    "Creativitate",
+    "Comunicare",
+    "Leadership",
+    "Ambiție",
+    "Pasiune"
+  ]
 }

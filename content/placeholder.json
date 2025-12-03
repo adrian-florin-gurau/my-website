@@ -1,12 +1,23 @@
 {
-    "function": "",
-    "aboutTitle": "",
-    "aboutText": "",
-    "projectsTitle": "",
-    "projectsGeneralText": "",
-    "projectsChoiceText": "",
-    "contactTitle": "",
-    "lastUpdatedLabel": "",
-    "themeInfoMessage": "",
-    "devNotification": ""
+  "portofolio": "",
+  "workspace": "",
+  "spot": "",
+  "function": "",
+  "aboutTitle": "",
+  "aboutText": "",
+  "projectsTitle": "",
+  "projectsGeneralText": "",
+  "projectsChoiceText": "",
+  "contactTitle": "",
+  "lastUpdatedLabel": "",
+  "themeInfoMessage": "",
+  "devNotification": "",
+  "languagesTitle": "",
+  "languages": [{
+    "name": "",
+    "gradeLabel": "",
+    "gradeNumeric": ""
+  }],
+  "softSkillsTitle": "",
+  "softSkills": []
 }

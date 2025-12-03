@@ -1,12 +1,39 @@
 {
-    "function": "Full-Stack Engineer & Cybersecurity Student",
-    "aboutTitle": "About me",
-    "aboutText": "As a Cybersecurity student and IT enthusiast, I am committed to continuous learning and expanding my expertise in this field. I am confident in my ability to overcome challenges, relying on my persistence, determination, flexibility, ambition, and creativity.",
-    "projectsTitle": "My projects",
-    "projectsGeneralText": "For full documentation and code for each project, go to my GitHub repositories:",
-    "projectsChoiceText": "But for brief and friendly presentations, you can go here:",
-    "contactTitle": "Contact me",
-    "lastUpdatedLabel": "Last updated on",
-    "themeInfoMessage": "[The website's theme is your OS theme]",
-    "devNotification": "[The /projects route is under development]"
+  "portofolio": "my portofolio",
+  "workspace": "my workspace",
+  "spot": "my spot",
+  "function": "Full-Stack Engineer & Cybersecurity Student",
+  "aboutTitle": "About me",
+  "aboutText": "As a Cybersecurity student and IT enthusiast, I am committed to continuous learning and expanding my expertise in this field. I am confident in my ability to overcome challenges, relying on my persistence, determination, flexibility, ambition, and creativity.",
+  "projectsTitle": "My projects",
+  "projectsGeneralText": "For full documentation and code for each project, go to my GitHub repositories:",
+  "projectsChoiceText": "But for brief and friendly presentations, you can go here:",
+  "contactTitle": "Contact me",
+  "lastUpdatedLabel": "Last updated on",
+  "themeInfoMessage": "[The website's theme is your OS theme]",
+  "devNotification": "[The /projects route is under development]",
+  "languagesTitle": "Known languages",
+  "languages": [
+    {
+        "name": "Romanian",
+        "gradeLabel": "Native",
+        "gradeNumeric": "C2+"
+    },
+    {
+        "name": "English",
+        "gradeLabel": "Fluent",
+        "gradeNumeric": "C1+"
+    }
+  ],
+  "softSkillsTitle": "Soft skills",
+  "softSkills": [
+    "Attention to detail",
+    "Problem-solving",
+    "Critical thinking",
+    "Communication",
+    "Leadership",
+    "Creativity",
+    "Ambition",
+    "Passion"
+  ]
 }
