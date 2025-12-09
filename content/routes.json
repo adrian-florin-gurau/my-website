@@ -1,58 +1,136 @@
 {
+  "homeLabel": "Homepage",
   "home": "/",
   "projectsLabel": "Projects",
   "projectsRoute": "/projects",
   "projects": [
     {
-        "name": "HuGuRo (Human Guard Robot)",
-        "description": "This is my Bachelor’s thesis, which consists of a Robot for Human Detection, its objective being the detection of intruders. For the hardware part of it, I used Arduino boards and modules. As for the software part of it, I mainly used C++ for the movement and detection AI, Next.js for the website.",
-        "link": "https://github.com/adrian-florin-gurau/huguro",
-        "langs": [
-            "TypeScript"
-        ],
-        "tools": [
-            "Next.js",
-            "PostgreSQL"
-        ],
-        "content": "Not yet implemented..."
+      "name": "Offline Antivirus",
+      "description": "🛡️A Java program that represents an Antivirus which verifies the integrity of files on your system. Can detect corrupted and new files based on their HmacSHA256, and can also create reports for each examination session.",
+      "link": "https://github.com/adrian-florin-gurau/offline-antivirus-java",
+      "langs": ["Java"],
+      "tools": ["HmacSHA256"],
+      "content": "<Content not yet published here. Access GitHub>"
     },
     {
-        "name": "Local Mail Server",
-        "description": "A socket-based app that simulates the behaviour of a mail server, but locally.",
-        "link": "https://github.com/adrian-florin-gurau/mail-server",
-        "langs": [
-            "Python"
-        ],
-        "tools": [
-            "Sockets",
-            "Threads"
-        ],
-        "content": "Not yet implemented..."
+      "name": "Simple PGP",
+      "description": "💬A Java program that acts as a PGP (Pretty Good Privacy) tool to intercept messages and also send.",
+      "link": "https://github.com/adrian-florin-gurau/simple-pgp-java",
+      "langs": ["Java"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
     },
     {
-        "name": "Examiverse FE",
-        "description": "The front-end of a web application that acts as a platform for students and teachers to connect for different activities (tests, events, etc.).",
-        "link": "https://github.com/adrian-florin-gurau/examiverse-frontend",
-        "langs": [
-            "JavaScript"
-        ],
-        "tools": [
-            "React"
-        ],
-        "content": "Not yet implemented..."
+      "name": "A5/1 PRNG",
+      "description": "📞A Java program that implements the core part of the primary stream cipher algorithm used for over-the-air encryption in 2G GSM (Global System for Mobile Communications) networks, namely A5/1 - a PRNG (Pseudo-Random Number Generator).",
+      "link": "https://github.com/adrian-florin-gurau/a5-prng-java",
+      "langs": ["Java"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
     },
     {
-        "name": "Examiverse BE",
-        "description": "The back-end of a web application that acts as a platform for students and teachers to connect for different activities (tests, events, etc.).",
-        "link": "https://github.com/adrian-florin-gurau/examiverse-backend",
-        "langs": [
-            "JavaScript"
-        ],
-        "tools": [
-            "Express",
-            "PostgreSQL"
-        ],
-        "content": "Not yet implemented..."
+      "name": "PKCS#7 and XML Signer",
+      "description": "✍🏻A Python program that can sign using PKCS#7 or XML.",
+      "link": "https://github.com/adrian-florin-gurau/pkcs7-and-xml-signer-python",
+      "langs": ["Python"],
+      "tools": ["PKCS#7", "XML"],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "CSR Generator",
+      "description": "🔑A Python program that can generate a CSR (Certificate Signing Request).",
+      "link": "https://github.com/adrian-florin-gurau/csr-generator-python",
+      "langs": ["Python"],
+      "tools": ["CSR"],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "XOR Encryption in C language",
+      "description": "🔐A C language program that encrypts a content file using a key file and generates the encrypted file. For decryption, the content file becomes the previously generated encrypted file.",
+      "link": "https://github.com/adrian-florin-gurau/xor-encryption-c-lang",
+      "langs": ["C"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "XOR Encryption in ASM 8086",
+      "description": "🔐An ASM 8086 program that encrypts a content file using a key file and generates the encrypted file. For decryption, the content file becomes the previously generated encrypted file.",
+      "link": "https://github.com/adrian-florin-gurau/xor-encryption-asm8086",
+      "langs": ["Assembly"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Second Degree Equation in ASM 8086",
+      "description": "🔺An ASM 8086 program that calculates the roots of a second-degree equation, with two decimal places, with inputs from keyboard.",
+      "link": "https://github.com/adrian-florin-gurau/second-degree-equation-asm8086",
+      "langs": ["Assembly"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Array Minimum and Maximum Calculator in ASM 8086",
+      "description": "💯 An ASM 8086 program to calculate the first minimum and maximum element from arrays (0 to 99 arrays) of [0; 99] elements, with each element having a value in [-9999; 9999], read from keyboard.",
+      "link": "https://github.com/adrian-florin-gurau/min-max-array-asm8086",
+      "langs": ["Assembly"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "My Portofolio Website (THIS WEBSITE)",
+      "description": "🌐 The place where you can see all about my professional life.",
+      "link": "https://github.com/adrian-florin-gurau/my-website",
+      "langs": ["TypeScript"],
+      "tools": ["Next.js", "AWS S3", "AWS Route 53", "AWS CloudFront"],
+      "content": "<Content AVAILABLE on GitHub README.md>"
+    },
+    {
+      "name": "HuGuRo (Human Guard Robot)",
+      "description": "This is my Bachelor’s thesis, which consists of a Robot for Human Detection, its objective being the detection of intruders. For the hardware part of it, I used Arduino boards and modules. As for the software part of it, I mainly used C++ for the movement and detection AI, Next.js for the website.",
+      "link": "https://github.com/adrian-florin-gurau/huguro",
+      "langs": ["TypeScript"],
+      "tools": ["Next.js", "PostgreSQL"],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Local Mail Server",
+      "description": "A socket-based app that simulates the behaviour of a mail server, but locally.",
+      "link": "https://github.com/adrian-florin-gurau/mail-server",
+      "langs": ["Python"],
+      "tools": ["Sockets", "Threads"],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Examiverse FE",
+      "description": "The front-end of a web application that acts as a platform for students and teachers to connect for different activities (tests, events, etc.).",
+      "link": "https://github.com/adrian-florin-gurau/examiverse-frontend",
+      "langs": ["JavaScript"],
+      "tools": ["React"],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Examiverse BE",
+      "description": "The back-end of a web application that acts as a platform for students and teachers to connect for different activities (tests, events, etc.).",
+      "link": "https://github.com/adrian-florin-gurau/examiverse-backend",
+      "langs": ["JavaScript"],
+      "tools": ["Express", "PostgreSQL"],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Restaurant Administration in C++",
+      "description": "C++ giant project.",
+      "link": "https://github.com/adrian-florin-gurau/Proiect_Gestiune_Restaurant",
+      "langs": ["C++"],
+      "tools": [],
+      "content": "<Content not yet published here. Access GitHub>"
+    },
+    {
+      "name": "Pizza Delivery Windows App in C# & .NET Framework",
+      "description": "C# comprehensive project.",
+      "link": "https://github.com/adrian-florin-gurau/Pizza_Delivery_Project",
+      "langs": ["C#"],
+      "tools": ["WinForms", ".NET Framework"],
+      "content": "<Content not yet published here. Access GitHub>"
     }
   ]
 }

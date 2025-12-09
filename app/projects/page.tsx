@@ -13,6 +13,7 @@ import Paragraph from "@/components/Paragraph";
 import Button from "@/components/Button";
 import { GitHubIcon } from "@/components/Icons";
 import Delimiter from "@/components/Delimiter";
+import HomeButton from "@/components/HomeButton";
 
 export default function Projects() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -49,7 +50,11 @@ export default function Projects() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen max-h-screen items-center justify-start bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col min-h-screen h-full items-center justify-start bg-zinc-50 font-sans dark:bg-black">
+      <div className="mt-5">
+        <HomeButton />
+      </div>
+
       <div className="mt-5">
         <BackButton />
       </div>
@@ -73,7 +78,9 @@ export default function Projects() {
             />
           </div>
           <Paragraph text={`Languages: ${project.langs.join(" | ")}`} />
-          <Paragraph text={`Tools: ${project.tools.join(" | ")}`} />
+          {project.tools.length > 0 ? (
+            <Paragraph text={`Tools: ${project.tools.join(" | ")}`} />
+          ) : null}
           <Delimiter />
           <Paragraph text={project.content} />
         </div>
@@ -90,18 +97,18 @@ export default function Projects() {
           position: fixed;
           bottom: 20px;
           right: 20px;
-          background-color: #0f0;
+          background-color: #800080;
           color: #000;
           border: none;
           padding: 12px;
           border-radius: 50%;
-          box-shadow: 0 0 10px #0f0;
+          box-shadow: 0 0 10px #800080;
           cursor: pointer;
           transition: background-color 0.3s ease;
         }
 
         .scroll-button:hover {
-          background-color: #0c0;
+          background-color: #500050;
         }
       `}</style>
     </div>
