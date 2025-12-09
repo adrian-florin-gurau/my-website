@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Adrian-Florin Gurău",
-  description: "My professional website where you can see my work experience, projects and can contact me if interested.",
+  description:
+    "My professional website where you can see my work experience, projects and can contact me if interested.",
 };
 
 export default function RootLayout({

@@ -63,17 +63,21 @@ const AnimatedBackground: React.FC = () => {
     let animationFrameId: number;
     const animate = () => {
       // Draw a semi-transparent overlay to create a fading trail effect.
-      
+
       // This returns a MediaQueryList object
-      const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
       // To get the current state:
       const isSystemDark = darkModeQuery.matches; // Returns true or false
 
-      ctx.fillStyle = isSystemDark ? "rgba(0, 0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)";
+      ctx.fillStyle = isSystemDark
+        ? "rgba(0, 0, 0, 0.1)"
+        : "rgba(255, 255, 255, 0.1)";
       ctx.fillRect(0, 0, width, height);
 
       // Draw grid lines.
-      ctx.strokeStyle = isSystemDark ? "rgba(255, 255, 255, 0.05)" : "rgba(0, 0, 0, 0.05)";
+      ctx.strokeStyle = isSystemDark
+        ? "rgba(255, 255, 255, 0.05)"
+        : "rgba(0, 0, 0, 0.05)";
       ctx.lineWidth = 1;
       for (let x = 0; x < width; x += gridSpacing) {
         ctx.beginPath();
@@ -110,8 +114,14 @@ const AnimatedBackground: React.FC = () => {
           p.y,
           p.size * 3
         );
-        gradient.addColorStop(0, isSystemDark ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.8)");
-        gradient.addColorStop(1, isSystemDark ? "rgba(255, 255, 255, 0)" : "rgba(0, 0, 0, 0)");
+        gradient.addColorStop(
+          0,
+          isSystemDark ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.8)"
+        );
+        gradient.addColorStop(
+          1,
+          isSystemDark ? "rgba(255, 255, 255, 0)" : "rgba(0, 0, 0, 0)"
+        );
         ctx.fillStyle = gradient;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size * 3, 0, Math.PI * 2);
