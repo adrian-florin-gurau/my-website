@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗂️ My Portofolio Website
 
-## Getting Started
+**🔗 Link: https://www.adrian-florin-gurau.com/**
+> I created this website as a way to present myself to individuals and companies interested in my skills and talent.
 
-First, run the development server:
+## 🛠️ Technologies used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+As there is no Back-End involved, I am only going to list the main tech used for Front-End:
+- **Next.js** -> a Full-Stack framework based on React.
+- **tailwind.css** -> a CSS library for easier styling.
+- **framer-motion** -> a library for complex animations made easier.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📑 Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. [Homepage](https://www.adrian-florin-gurau.com/): has details mostly included inside a CV, like experience, summary, skills, contact details, etc.
+2. [Projects](https://www.adrian-florin-gurau.com/projects): a list with my featured projects, with a friendly and brief description.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️Flow
 
-## Learn More
+- The Homepage has its content exported from JSON Objects (i.e. `en.json` and `ro.json`), thus supporting English and Romanian languages, picked by `loadLanguage()` function exported from `lang.js`, with respect to the `lang` attribute in the `localStorage`.
+- The `constants.json` includes content that is not translatable (e.g. my name, links, labels, etc.).
+- The `routes.json` contains links and labels to all paths (esentially two) and a JSON Array of projects to be displayed in the list from the Projects page. Example:
+  ```json
+  {
+    "home": "/",
+    "projectsLabel": "Projects",
+    "projectsRoute": "/projects",
+    "projects": [
+      {
+        "name": "Project 1",
+        "description": "<description1>",
+        "link": "https://github.com/adrian-florin-gurau/<link1>",
+        "langs": [
+          "TypeScript"
+        ],
+        "tools": [
+          "Next.js",
+          "PostgreSQL"
+        ],
+        "content": "Some content here..."
+      },
+      {
+        "name": "Project 2",
+        "description": "<description2>",
+        "link": "https://github.com/adrian-florin-gurau/<link2>",
+        "langs": [
+            "Python"
+        ],
+        "tools": [
+            "Sockets",
+            "Threads"
+        ],
+        "content": "Some content here..."
+      }
+    ]
+  }
 
-To learn more about Next.js, take a look at the following resources:
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The `AnimatedBackground.tsx` component is responsible for the grid-styled background on the Homepage, using a `<canvas>` element and JavaScript logic to handle the drawing.
+- The `Title.tsx` component displays an array of strings through a 'type and delete' animation, along with a cursor flashing animation.
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Domain Name:
+- bought from **Namecheap**.
+2. Storage:
+- uploaded the files inside a bucket, as a static website in **AWS S3**.
+3. DNS / Routing:
+- made correspondece with the domain name using **AWS Route 53**.
+4. CDN / Delivery:
+- hosting my website through **AWS CloudFront**.
